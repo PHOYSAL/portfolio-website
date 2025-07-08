@@ -5,13 +5,16 @@
     font-variation-settings:
         "wdth" 100;
 }
-body{
+
+body {
     max-width: 1640px;
     margin: 0 auto;
 }
+
 .header-section {
     background-color: #FFF8F3;
-    background-image: url('../images/developer.png');
+    background-image: url('../images/developer.png'), url("../images/header_bg.png");
+    background-position: top left, bottom right;
     background-repeat: no-repeat;
     margin-left: 25px;
 }
@@ -24,7 +27,8 @@ body{
 .dark-2 {
     color: #474747;
 }
-.info-color{
+
+.info-color {
     color: #757575;
 }
 
@@ -37,6 +41,13 @@ body{
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.secondary-bg {
+    background-color: #FFF8F3;
+}
+.text{
+    text-align: center;
 }
 
 /* nav styles  */
@@ -77,8 +88,7 @@ nav li a {
 
 .banner img {
     width: 590px;
-    /* background-image: url("../images/header_bg.png"); */
-    background-position: top left, bottom right;
+
 }
 
 .banner-title {
@@ -96,6 +106,50 @@ nav li a {
     margin-right: 10px;
 }
 
-main{
-    margin-top: 100px;
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+main section{
+    margin: 130px 0;
+}
+.about {
+    
+    padding: 130px;
+    text-align: center;
+    border-radius: 5px;
+    
+
+}
+.about >div{
+    border: 1px solid gray;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.about-info ,.about-discription{
+    font-size: 20px;
+    font-weight: 700;
+    color: #757575;
+}
+.about-skill-items{
+    display: flex;
+    gap: 25px;
+}
+.about-skill{
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 35px;
+}
+.about-skill:hover{
+    background-color:aliceblue;
+    cursor: pointer;
 }
